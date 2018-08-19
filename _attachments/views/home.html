@@ -1,0 +1,17 @@
+<div class="jumbotron" style="background-color: white">
+        <a class='btn btn-primary btn-lg text-white' role='button' id='searchButton'>Load objects</a>
+        <br>
+        <br>
+        <br>
+
+        <div ng-repeat="object in objects">
+            <div class="card card-block bg-secondary">
+                <p><b> Author ID: </b>{{ object.userId }}</p>
+                <p><b> ID: </b>{{ object.id }}</p>  
+                <p><b>Body: </b>{{ object.body }}</p>  
+            </div>
+            <br>
+            <br>
+        </div>
+
+</div>
